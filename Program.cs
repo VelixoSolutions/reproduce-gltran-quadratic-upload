@@ -10,7 +10,7 @@ namespace reproduce_quadratic_gl_upload
 {
     class Program
     {
-        // CHANGE THIS IF NEEDED!
+        // CHANGE THIS AS NEEDED!
         // -
         private const string AcumaticaUri = "https://test.velixo.com/2020R1";
         private const string Tenant = "Company";
