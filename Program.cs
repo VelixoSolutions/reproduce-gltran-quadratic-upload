@@ -16,7 +16,13 @@ namespace reproduce_quadratic_gl_upload
         private const string Tenant = "Company";
         private const string Username = "user";
         private const string Password = "password";
-        
+        // You can change it to any open period in your system if needed.
+        // -
+        private static readonly DateTime DateEntered = new DateTime(2020, 1, 1);
+        private const string FinPeriodID = "202001";
+
+        // You can keep these values unchanged if you use SalesDemo database.
+        // -
         private const string GLTransactionScreenID = "GL301000";
         private const string HeaderView = "BatchModule";
         private const string DetailView = "GLTranModuleBatNbr";
@@ -24,8 +30,7 @@ namespace reproduce_quadratic_gl_upload
         private const string Ledger = "ACTUAL";
         private const string DebitAccount = "10100";
         private const string CreditAccount = "10200";
-        private static readonly DateTime DateEntered = new DateTime(2020, 1, 1);
-        private const string FinPeriodID = "202001";
+       
         private static readonly IFormatProvider FormatProvider = CultureInfo.CreateSpecificCulture("en-US");
 
         static async Task<ScreenSoap> LoginAsync()
